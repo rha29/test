@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>큐티덕</title>
+  <style>
+    #duck-image {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<img id="duck-image" src="duck.jpg" alt="오리 사진" width="500" height="500">
+
+<script>
+  const duckImage = document.getElementById('duck-image');
+
+  // 오리 사진을 클릭하면 소리 재생
+  duckImage.addEventListener('click', () => {
+    const audio = new Audio('duck-sound.mp3');
+    audio.play();
+  });
+</script>
+
+</body>
+</html>
